@@ -15,9 +15,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        GDPR gdpr = new GDPR(this);
+        gdpr.setGDPR();
+
         // Banner Ad
         AdmobAd admobAd = new AdmobAd(this);
         admobAd.loadBanner(findViewById(R.id.adLayout));
+
+
 
     }
 }
