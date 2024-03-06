@@ -1,5 +1,6 @@
 <h1 align='center'>Smart Admob Ads</h1>
 
+
 > 1. Add it in your root `settings.gradle` at the end of repositories
 ```
   maven { url 'https://jitpack.io' }
@@ -250,5 +251,13 @@ JAVA CODE-
             }
         }).initializeAdmobAd().loadAdmobNativeAd(templateView);
 ```
+
+## License
+
+Distributed under the MIT License. See [LICENSE]([https://github.com/AtikulSoftware/smart-slider/blob/main/LICENSE.md](https://github.com/AtikulSoftware/SmartAdmob/blob/main/LICENSE)) for more information.
+
+## Authors
+
+* **Md Atikul Islam** - *Android Software Developer* - [Md Atikul Islam](https://github.com/AtikulSoftware) - *Easy & Quick Solution*
 
 <h1 align="center">Thank You ❤️</h1>
