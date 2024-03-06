@@ -59,7 +59,6 @@ public class GDPR {
         AdmobAd admobAd = new AdmobAd(activity);
         admobAd.initializeAdmobAd();
 
-       // MobileAds.initialize(activity);
     } // initializeMobileAdsSdk end here =========
 
 } // GDPR End Here ===============================

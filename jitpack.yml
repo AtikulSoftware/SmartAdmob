@@ -4,4 +4,4 @@ before_install:
   - ./scripts/prepareJitpackEnvironment.sh
 install:
   - FILE="-Dfile=SmartAdmob-release.aar"
-  - mvn install:install-file $FILE -DgroupId=com.github.AtikulSoftware -DartifactId=SmartAdmob -Dversion=1.0 -Dpackaging=aar -DgeneratePom=true
+  - mvn install:install-file $FILE -DgroupId=com.github.AtikulSoftware -DartifactId=SmartAdmob -Dversion=2.0 -Dpackaging=aar -DgeneratePom=true
