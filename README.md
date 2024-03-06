@@ -252,6 +252,19 @@ JAVA CODE-
         }).initializeAdmobAd().loadAdmobNativeAd(templateView);
 ```
 
+## GDPR MESSAGE
+
+```
+ GDPR gdpr = new GDPR(this);
+ gdpr.setGDPR();
+```
+
+## AD ON / OFF
+
+```
+ AdmobAdUnit.ADMOB_AD_IS_ON = false;
+```
+
 ## License
 
 Distributed under the MIT License. See [LICENSE]([https://github.com/AtikulSoftware/smart-slider/blob/main/LICENSE.md](https://github.com/AtikulSoftware/SmartAdmob/blob/main/LICENSE)) for more information.
