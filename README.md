@@ -9,7 +9,7 @@
 
 > Step 2. Add the dependency in `build.gradle`
 ```
- implementation 'com.github.AtikulSoftware:SmartAdmob:1.0'
+ implementation 'com.github.AtikulSoftware:SmartAdmob:2.0'
  implementation 'com.google.android.gms:play-services-ads:22.6.0'
 ```
 
