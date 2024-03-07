@@ -107,7 +107,7 @@ new AdmobAd(this, new AdmobAdCallBack() {
             }
 
             @Override
-            public void adOpened() {
+            public void onAdOpened() {
 
             }
 
