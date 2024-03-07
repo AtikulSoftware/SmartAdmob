@@ -1,5 +1,12 @@
-<h1 align='center'>Smart Admob Ads</h1>
+<p align="center">
+  <a href="https://github.com/AtikulSoftware/SmartAdmob">
+    <img src="https://raw.githubusercontent.com/AtikulSoftware/AtikulFiles/main/Smart%20Admob.png" alt="Logo" width="100" height="100">
+  </a> 
+  <br>
+  <a href="https://github.com/AtikulSoftware/SmartAdmob"> Watch Video To Implementation Smart Admob Library </a>
+</p>
 
+<h1 align='center'>Smart Admob Ads</h1>
 
 > 1. Add it in your root `settings.gradle` at the end of repositories
 ```
@@ -9,7 +16,7 @@
 
 > Step 2. Add the dependency in `build.gradle`
 ```
- implementation 'com.github.AtikulSoftware:SmartAdmob:1.0'
+ implementation 'com.github.AtikulSoftware:SmartAdmob:2.0'
  implementation 'com.google.android.gms:play-services-ads:22.6.0'
 ```
 
@@ -250,6 +257,19 @@ JAVA CODE-
                 templateView.setVisibility(View.VISIBLE);
             }
         }).initializeAdmobAd().loadAdmobNativeAd(templateView);
+```
+
+## GDPR MESSAGE
+
+```
+ GDPR gdpr = new GDPR(this);
+ gdpr.setGDPR();
+```
+
+## AD ON / OFF
+
+```
+ AdmobAdUnit.ADMOB_AD_IS_ON = false;
 ```
 
 ## License
