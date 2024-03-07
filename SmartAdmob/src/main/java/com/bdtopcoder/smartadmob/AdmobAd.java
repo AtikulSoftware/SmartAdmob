@@ -84,7 +84,7 @@ public class AdmobAd {
                 @Override
                 public void onAdClosed() {
                     super.onAdClosed();
-                    admobAdCallBack.onAdClicked();
+                    admobAdCallBack.onAdClosed();
                 }
 
                 @Override
@@ -108,7 +108,7 @@ public class AdmobAd {
                 @Override
                 public void onAdOpened() {
                     super.onAdOpened();
-                    admobAdCallBack.adOpened();
+                    admobAdCallBack.onAdOpened();
                 }
             });
 
@@ -209,11 +209,13 @@ public class AdmobAd {
                       @Override
                       public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
                           AdmobAdUnit.rewardedAd = null;
+                          admobAdCallBack.onAdFailedToLoad(loadAdError);
                       }
 
                       @Override
                       public void onAdLoaded(@NonNull RewardedAd ad) {
                           AdmobAdUnit.rewardedAd = ad;
+                          admobAdCallBack.onAdLoaded(ad);
                       }
                   });
       }

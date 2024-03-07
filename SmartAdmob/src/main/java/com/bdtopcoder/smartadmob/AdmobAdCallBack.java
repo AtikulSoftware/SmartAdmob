@@ -6,6 +6,7 @@ import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.interstitial.InterstitialAd;
 import com.google.android.gms.ads.nativead.NativeAd;
 import com.google.android.gms.ads.rewarded.RewardItem;
+import com.google.android.gms.ads.rewarded.RewardedAd;
 
 public interface AdmobAdCallBack {
     default void onAdClicked() {}
@@ -18,7 +19,7 @@ public interface AdmobAdCallBack {
 
     default void onAdLoaded() {}
 
-    default void adOpened() {}
+    default void onAdOpened() {}
 
     default void adInitialize(InitializationStatus initializationStatus) {}
 
@@ -31,6 +32,7 @@ public interface AdmobAdCallBack {
 
     // Rewarded ad
     default void onUserEarnedReward(RewardItem rewardItem){}
+    default void onAdLoaded(RewardedAd rewardedAd){}
 
     // Native Ad
     default void onNativeAdLoaded(NativeAd nativeAd){}
