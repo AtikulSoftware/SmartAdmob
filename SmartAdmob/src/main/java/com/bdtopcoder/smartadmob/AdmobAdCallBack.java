@@ -21,8 +21,6 @@ public interface AdmobAdCallBack {
 
     default void onAdOpened() {}
 
-    default void adInitialize(InitializationStatus initializationStatus) {}
-
     // Interstitial Ad
     default void onAdLoaded(InterstitialAd interstitialAd){}
     default void onAdDismissedFullScreenContent(){}

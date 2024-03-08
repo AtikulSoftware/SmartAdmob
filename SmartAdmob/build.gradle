@@ -76,7 +76,7 @@ publishing {
         maven(MavenPublication) {
             groupId = 'com.github.AtikulSoftware'
             artifactId = 'SmartAdmob'
-            version = "3.0"
+            version = "4.0"
             pom {
                 description = 'Smart Admob Library'
             }

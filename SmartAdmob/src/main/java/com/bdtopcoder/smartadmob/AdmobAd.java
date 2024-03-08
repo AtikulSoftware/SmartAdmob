@@ -49,7 +49,6 @@ public class AdmobAd {
     public AdmobAd initializeAdmobAd() {
         if (AdmobAdUnit.ADMOB_AD_IS_ON) {
             MobileAds.initialize(activity, initializationStatus -> {
-                admobAdCallBack.adInitialize(initializationStatus);
             });
         }
         return this;

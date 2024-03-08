@@ -3,6 +3,7 @@ package com.bdtopcoder.smartadmob;
 import android.app.Activity;
 import android.util.Log;
 
+import com.google.android.gms.ads.MobileAds;
 import com.google.android.ump.ConsentForm;
 import com.google.android.ump.ConsentInformation;
 import com.google.android.ump.ConsentRequestParameters;
@@ -55,7 +56,6 @@ public class GDPR {
         if (isMobileAdsInitializeCalled.getAndSet(true)) {
             return;
         }
-
         AdmobAd admobAd = new AdmobAd(activity);
         admobAd.initializeAdmobAd();
 
