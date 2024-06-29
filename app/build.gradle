@@ -8,10 +8,10 @@ android {
 
     defaultConfig {
         applicationId "com.bdtopcoder.smartadmob"
-        minSdk 19
+        minSdk 21
         targetSdk 34
         versionCode 1
-        versionName "4.0"
+        versionName "5.0"
         multiDexEnabled true
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -39,5 +39,7 @@ dependencies {
     testImplementation libs.junit
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
+
+    implementation 'com.google.android.gms:play-services-ads:23.2.0'
 
 }

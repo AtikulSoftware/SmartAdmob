@@ -23,11 +23,11 @@ import com.google.android.gms.ads.rewarded.RewardedAd;
 import com.google.android.gms.ads.rewarded.RewardedAdLoadCallback;
 
 /*
-* MD Atikul Islam
-* Website - https://www.bdtopcoder.xyz/
-* YouTube - https://www.youtube.com/@AwesomeDesigner
-* Copyright © AtikulSoftware
-*/
+ * MD Atikul Islam
+ * Website - https://www.bdtopcoder.xyz/
+ * YouTube - https://www.youtube.com/@AwesomeDesigner
+ * Copyright © AtikulSoftware
+ */
 
 
 public class AdmobAd {
@@ -165,15 +165,16 @@ public class AdmobAd {
                             loadAdmobInterstitialAd();
                         }
 
-                        admobAdCallBack.onAdDismissed();
                         admobAdCallBack.onAdDismissedFullScreenContent();
+                        admobAdCallBack.onAdDismissed();
+
                     }
 
                     @Override
                     public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
                         super.onAdFailedToShowFullScreenContent(adError);
-                        admobAdCallBack.onAdDismissed();
                         admobAdCallBack.onAdFailedToShowFullScreenContent(adError);
+                        admobAdCallBack.onAdDismissed();
                     }
 
                     @Override
@@ -201,30 +202,31 @@ public class AdmobAd {
 
 
     public AdmobAd loadAdmobRewardedAd() {
-      if (AdmobAdUnit.ADMOB_AD_IS_ON){
-          AdRequest adRequest = new AdRequest.Builder().build();
-          RewardedAd.load(activity, AdmobAdUnit.ADMOB_REWARDED_AD,
-                  adRequest, new RewardedAdLoadCallback() {
-                      @Override
-                      public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
-                          AdmobAdUnit.rewardedAd = null;
-                          admobAdCallBack.onAdFailedToLoad(loadAdError);
-                      }
+        if (AdmobAdUnit.ADMOB_AD_IS_ON) {
+            AdRequest adRequest = new AdRequest.Builder().build();
+            RewardedAd.load(activity, AdmobAdUnit.ADMOB_REWARDED_AD,
+                    adRequest, new RewardedAdLoadCallback() {
+                        @Override
+                        public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
+                            admobAdCallBack.onAdFailedToLoad(loadAdError);
+                            AdmobAdUnit.rewardedAd = null;
 
-                      @Override
-                      public void onAdLoaded(@NonNull RewardedAd ad) {
-                          AdmobAdUnit.rewardedAd = ad;
-                          admobAdCallBack.onAdLoaded(ad);
-                      }
-                  });
-      }
+                        }
+
+                        @Override
+                        public void onAdLoaded(@NonNull RewardedAd ad) {
+                            AdmobAdUnit.rewardedAd = ad;
+                            admobAdCallBack.onAdLoaded(ad);
+                        }
+                    });
+        }
 
         return this;
     } // loadAdmobRewardedAd end here ========
 
-    public void showAdmobRewardedAd(boolean isAdLoad){
-        if (AdmobAdUnit.ADMOB_AD_IS_ON){
-            if (AdmobAdUnit.rewardedAd != null){
+    public void showAdmobRewardedAd(boolean isAdLoad) {
+        if (AdmobAdUnit.ADMOB_AD_IS_ON) {
+            if (AdmobAdUnit.rewardedAd != null) {
                 AdmobAdUnit.rewardedAd.show(activity, rewardItem -> admobAdCallBack.onUserEarnedReward(rewardItem));
 
                 AdmobAdUnit.rewardedAd.setFullScreenContentCallback(new FullScreenContentCallback() {
@@ -238,13 +240,14 @@ public class AdmobAd {
                     public void onAdDismissedFullScreenContent() {
                         super.onAdDismissedFullScreenContent();
 
-                        if (isAdLoad){
+                        if (isAdLoad) {
                             AdmobAdUnit.rewardedAd = null;
                             loadAdmobRewardedAd();
                         }
 
-                        admobAdCallBack.onAdDismissed();
                         admobAdCallBack.onAdDismissedFullScreenContent();
+                        admobAdCallBack.onAdDismissed();
+
                     }
 
                     @Override
@@ -275,8 +278,8 @@ public class AdmobAd {
 
     } // showAdmobRewardedAd end here ========
 
-    public void loadAdmobNativeAd(TemplateView templateView){
-        if (AdmobAdUnit.ADMOB_AD_IS_ON){
+    public void loadAdmobNativeAd(TemplateView templateView) {
+        if (AdmobAdUnit.ADMOB_AD_IS_ON) {
             MobileAds.initialize(activity);
             AdLoader adLoader = new AdLoader.Builder(activity, AdmobAdUnit.ADMOB_NATIVE_AD)
                     .forNativeAd(nativeAd -> {

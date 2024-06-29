@@ -5,19 +5,15 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".SplashScreen">
 
-    <Button
-        android:id="@+id/fullScreenAd"
+    <TextView
+        android:id="@+id/tvTime"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Hello"
+        android:gravity="center"
+        android:layout_centerInParent="true"
         />
-
-    <LinearLayout
-        android:id="@+id/bannerAd"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:orientation="vertical" />
 
 </RelativeLayout>

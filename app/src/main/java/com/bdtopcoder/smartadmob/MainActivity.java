@@ -1,12 +1,14 @@
 package com.bdtopcoder.smartadmob;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
+import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+
+import com.google.android.gms.ads.AdError;
+import com.google.android.gms.ads.LoadAdError;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,14 +24,65 @@ public class MainActivity extends AppCompatActivity {
         GDPR gdpr = new GDPR(this);
         gdpr.setGDPR();
 
-        AdmobAd admobAd = new AdmobAd(this);
+        try {
 
-        // sdk initialize
-        admobAd.initializeAdmobAd();
+            new AdmobAd(this, new AdmobAdCallBack() {
+                @Override
+                public void onAdClicked() {
 
-        // Banner Ad
-        admobAd.loadBanner(findViewById(R.id.adLayout));
+                }
 
+                @Override
+                public void onAdClosed() {
+
+                }
+
+                @Override
+                public void onAdFailedToLoad(LoadAdError loadAdError) {
+
+                }
+
+                @Override
+                public void onAdImpression() {
+
+                }
+
+                @Override
+                public void onAdLoaded() {
+
+                }
+
+                @Override
+                public void onAdOpened() {
+
+                }
+
+            }).initializeAdmobAd().loadBanner(findViewById(R.id.bannerAd));
+
+        } catch (Exception e) {
+            Log.d("AtikulTest", "DeadObjectException");
+
+        }
+
+        AdmobAdUnit.ADMOB_INTERSTITIAL_AD = "ca-app-pub-3940256099942544/1033173712";
+        findViewById(R.id.fullScreenAd).setOnClickListener(v -> {
+            new AdmobAd(this, new AdmobAdCallBack() {
+                @Override
+                public void onAdFailedToLoad(LoadAdError loadAdError) {
+                    Toast.makeText(MainActivity.this, "onAdFailedToLoad", Toast.LENGTH_SHORT).show();
+                }
+
+                @Override
+                public void onAdFailedToShowFullScreenContent(AdError adError) {
+                    Toast.makeText(MainActivity.this, "onAdFailedToShowFullScreenContent", Toast.LENGTH_SHORT).show();
+                }
+
+                @Override
+                public void onAdDismissed() {
+                    startActivity(new Intent(MainActivity.this,SplashScreen.class));
+                }
+            }).loadAdmobInterstitialAd().showAdmobInterstitial(true);
+        });
 
     }
 }
