@@ -3,7 +3,7 @@
     <img src="https://raw.githubusercontent.com/AtikulSoftware/AtikulFiles/main/Smart%20Admob.png" alt="Logo" width="100" height="100">
   </a> 
   <br>
-  <a href="https://github.com/AtikulSoftware/SmartAdmob"> Watch Video To Implementation Smart Admob Library </a>
+  <a href="https://youtu.be/92zC5RXHjk4?si=Er0KGYnWV-n3lilT"> Watch Video To Implementation Smart Admob Library </a>
 </p>
 
 <h1 align='center'>Smart Admob Ads</h1>
@@ -16,7 +16,7 @@
 
 > Step 2. Add the dependency in `build.gradle`
 ```
- implementation 'com.github.AtikulSoftware:SmartAdmob:3.0'
+ implementation 'com.github.AtikulSoftware:SmartAdmob:4.0'
  implementation 'com.google.android.gms:play-services-ads:22.6.0'
 ```
 
@@ -236,7 +236,7 @@ new AdmobAd(this, new AdmobAdCallBack() {
 
 ## NATIVE AD
 
-> How to use Native Ad ? `Native Templates`
+> How to use Native Ad ? `Native Templates` <a href="https://developers.google.com/admob/android/native/templates"> Download Native Templates  </a>
 ```
 XML CODE - 
     <com.google.android.ads.nativetemplates.TemplateView
