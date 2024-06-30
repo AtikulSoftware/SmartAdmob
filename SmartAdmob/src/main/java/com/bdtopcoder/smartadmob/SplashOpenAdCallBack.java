@@ -1,9 +1,9 @@
 package com.bdtopcoder.smartadmob;
 
 public interface SplashOpenAdCallBack {
-    void loadingTimer(long time);
+    default void loadingTimer(long time){}
 
-    void loadingDone(boolean isDone);
+    default void loadingDone(boolean isDone){}
 
-    void startYourActivity();
+    default void startYourActivity(){}
 }

@@ -20,6 +20,7 @@ public class SplashScreen extends AppCompatActivity {
 
         tvTime = findViewById(R.id.tvTime);
 
+        AdmobAdUnit.ADMOB_AD_IS_ON = true;
         AdmobAdUnit.ADMOB_OPEN_AD = "ca-app-pub-3940256099942544/9257395921";
         splashManager = new SplashManager(SplashScreen.this, new SplashOpenAdCallBack() {
             @Override
@@ -42,7 +43,6 @@ public class SplashScreen extends AppCompatActivity {
         splashManager.initialize();
 
     } // OnCreate method end here ========
-
 
 
 } // public class end here ===============

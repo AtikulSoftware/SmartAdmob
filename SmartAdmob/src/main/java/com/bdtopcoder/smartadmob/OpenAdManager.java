@@ -72,7 +72,9 @@ public class OpenAdManager extends Application implements Application.ActivityLi
     }
 
     public void loadAd(@NonNull Activity activity) {
-        appOpenAdManager.loadAd(activity);
+        if (AdmobAdUnit.ADMOB_AD_IS_ON) {
+            appOpenAdManager.loadAd(activity);
+        }
     }
 
     public void showAdIfAvailable(
@@ -91,7 +93,6 @@ public class OpenAdManager extends Application implements Application.ActivityLi
 
         GoogleMobileAdsConsentManager googleMobileAdsConsentManager =
                 GoogleMobileAdsConsentManager.getInstance(getApplicationContext());
-        // AppOpenAd appOpenAd = null;
         boolean isLoadingAd = false;
         boolean isShowingAd = false;
 
@@ -128,6 +129,7 @@ public class OpenAdManager extends Application implements Application.ActivityLi
                             // Log.d(LOG_TAG, "onAdFailedToLoad: " + loadAdError.getMessage());
                         }
                     });
+
         }
 
         private boolean wasLoadTimeLessThanNHoursAgo(long numHours) {
@@ -154,56 +156,70 @@ public class OpenAdManager extends Application implements Application.ActivityLi
         private void showAdIfAvailable(
                 @NonNull final Activity activity,
                 @NonNull OnShowAdCompleteListener onShowAdCompleteListener) {
-            if (isShowingAd) {
-                //  Log.d(LOG_TAG, "The app open ad is already showing.");
-                return;
-            }
 
-            if (!isAdAvailable()) {
-                // Log.d(LOG_TAG, "The app open ad is not ready yet.");
-                onShowAdCompleteListener.onShowAdComplete();
-                if (googleMobileAdsConsentManager.canRequestAds()) {
-                    loadAd(currentActivity);
+            if (AdmobAdUnit.ADMOB_AD_IS_ON) {
+                if (isShowingAd) {
+                    //  Log.d(LOG_TAG, "The app open ad is already showing.");
+                    return;
                 }
-                return;
+
+                if (!isAdAvailable()) {
+                    // Log.d(LOG_TAG, "The app open ad is not ready yet.");
+                    onShowAdCompleteListener.onShowAdComplete();
+                    if (googleMobileAdsConsentManager.canRequestAds()) {
+                        if (AdmobAdUnit.ADMOB_AD_IS_ON) {
+                            loadAd(currentActivity);
+                        }
+
+                    }
+                    return;
+                }
+
+                Log.d(LOG_TAG, "Will show ad.");
+
+                AdmobAdUnit.openAd.setFullScreenContentCallback(
+                        new FullScreenContentCallback() {
+                            @Override
+                            public void onAdDismissedFullScreenContent() {
+                                AdmobAdUnit.openAd = null;
+                                isShowingAd = false;
+                                // Log.d(LOG_TAG, "onAdDismissedFullScreenContent.");
+
+                                onShowAdCompleteListener.onShowAdComplete();
+                                if (googleMobileAdsConsentManager.canRequestAds()) {
+                                    if (AdmobAdUnit.ADMOB_AD_IS_ON) {
+                                        loadAd(activity);
+                                    }
+
+                                }
+                            }
+
+                            @Override
+                            public void onAdFailedToShowFullScreenContent(AdError adError) {
+                                AdmobAdUnit.openAd = null;
+                                isShowingAd = false;
+                                // Log.d(LOG_TAG, "onAdFailedToShowFullScreenContent: " + adError.getMessage());
+
+                                onShowAdCompleteListener.onShowAdComplete();
+                                if (googleMobileAdsConsentManager.canRequestAds()) {
+                                    if (AdmobAdUnit.ADMOB_AD_IS_ON) {
+                                        loadAd(activity);
+                                    }
+
+                                }
+                            }
+
+                            @Override
+                            public void onAdShowedFullScreenContent() {
+                                // Log.d(LOG_TAG, "onAdShowedFullScreenContent.");
+                            }
+                        });
+
+                isShowingAd = true;
+                AdmobAdUnit.openAd.show(activity);
+            } else {
+                onShowAdCompleteListener.onShowAdComplete();
             }
-
-            Log.d(LOG_TAG, "Will show ad.");
-
-            AdmobAdUnit.openAd.setFullScreenContentCallback(
-                    new FullScreenContentCallback() {
-                        @Override
-                        public void onAdDismissedFullScreenContent() {
-                            AdmobAdUnit.openAd = null;
-                            isShowingAd = false;
-                            // Log.d(LOG_TAG, "onAdDismissedFullScreenContent.");
-
-                            onShowAdCompleteListener.onShowAdComplete();
-                            if (googleMobileAdsConsentManager.canRequestAds()) {
-                                loadAd(activity);
-                            }
-                        }
-
-                        @Override
-                        public void onAdFailedToShowFullScreenContent(AdError adError) {
-                            AdmobAdUnit.openAd = null;
-                            isShowingAd = false;
-                            // Log.d(LOG_TAG, "onAdFailedToShowFullScreenContent: " + adError.getMessage());
-
-                            onShowAdCompleteListener.onShowAdComplete();
-                            if (googleMobileAdsConsentManager.canRequestAds()) {
-                                loadAd(activity);
-                            }
-                        }
-
-                        @Override
-                        public void onAdShowedFullScreenContent() {
-                            // Log.d(LOG_TAG, "onAdShowedFullScreenContent.");
-                        }
-                    });
-
-            isShowingAd = true;
-            AdmobAdUnit.openAd.show(activity);
         }
     } // AppOpenAdManager end here =======
 
