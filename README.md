@@ -16,8 +16,8 @@
 
 > Step 2. Add the dependency in `build.gradle`
 ```
- implementation 'com.github.AtikulSoftware:SmartAdmob:4.0'
- implementation 'com.google.android.gms:play-services-ads:22.6.0'
+ implementation 'com.github.AtikulSoftware:SmartAdmob:6.0'
+ implementation 'com.google.android.gms:play-services-ads:23.2.0'
 ```
 
 <br>
@@ -258,6 +258,88 @@ JAVA CODE-
             }
         }).initializeAdmobAd().loadAdmobNativeAd(templateView);
 ```
+
+<br>
+
+## OPEN AD
+> 1. Create a Java Class Name `MyApplication.java` 
+```
+public class MyApplication extends OpenAdManager {
+    @Override
+    public void onCreate() {
+        super.onCreate();
+    }
+}
+```
+
+> 2. Do some changes in `AndroidManifest.xml` inside application tag add name `android:name=".MyApplication"`
+```
+<application
+  ...
+  android:name=".MyApplication"
+  ...
+</application>
+```
+
+> 3. Create a Activity name `SplashScreen` 
+```
+public class SplashScreen extends AppCompatActivity {
+
+    SplashManager splashManager;
+    TextView tvResult;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_splash_screen);
+
+        // initialize
+        tvResult = findViewById(R.id.tvResult);
+
+        // set ad unit id
+        AdmobAdUnit.ADMOB_OPEN_AD = "ca-app-pub-3940256099942544/9257395921";
+
+        // for open ad
+        splashManager = new SplashManager(this, new SplashOpenAdCallBack() {
+            @Override
+            public void startYourActivity() {
+                startActivity(new Intent(SplashScreen.this, MainActivity.class));
+                finish();
+            }
+
+            @Override
+            public void loadingTimer(long time) {
+                runOnUiThread(() -> tvResult.setText(String.valueOf(time)));
+            }
+        });
+        splashManager.initialize();
+
+    } // onCreate bundle end here ==========
+
+} // public class end here =================
+```
+
+<table align="center">
+    <tr>
+        <th>MyApplication.java</th>
+        <th>AndroidManifest.xml</th>
+       <th>SplashScreen.java</th>
+    </tr>
+    <tr>
+        <td><img width="200"
+                src="https://raw.githubusercontent.com/AtikulSoftware/AtikulFiles/main/open%20ad/MyApplication.png"
+                alt="MyApplication.java">
+        </td>
+        <td><img width="200"
+                src="https://raw.githubusercontent.com/AtikulSoftware/AtikulFiles/main/open%20ad/AndroidManifest.png"
+                alt="AndroidManifest.xml"></td>
+       <td><img width="200"
+                src="https://raw.githubusercontent.com/AtikulSoftware/AtikulFiles/main/open%20ad/SplashScreen.png"
+                alt="SplashScreen.java"></td>
+    </tr>
+</table>
+
+<br>
 
 ## GDPR MESSAGE
 
