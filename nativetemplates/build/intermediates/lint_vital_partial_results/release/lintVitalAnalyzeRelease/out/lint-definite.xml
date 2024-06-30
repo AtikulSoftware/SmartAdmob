@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.3.2" type="incidents">
+
+    <incident
+        id="ResourceName"
+        severity="fatal"
+        message="Resource named &apos;`TemplateView`&apos; does not start with the project&apos;s resource prefix &apos;`gnt_`&apos;; rename to &apos;`GntTemplateView`&apos; ?">
+        <location
+            file="${:nativetemplates*release*MAIN*sourceProvider*0*resDir*0}/values/attrs.xml"
+            line="4"
+            column="22"
+            startOffset="35"
+            endLine="4"
+            endColumn="41"
+            endOffset="54"/>
+    </incident>
+
+    <incident
+        id="ExpiredTargetSdkVersion"
+        severity="fatal"
+        message="Google Play requires that apps target API level 33 or higher.">
+        <location
+            file="${:nativetemplates*projectDir}/build.gradle"
+            line="10"
+            column="9"
+            startOffset="186"
+            endLine="10"
+            endColumn="28"
+            endOffset="205"/>
+    </incident>
+
+</incidents>

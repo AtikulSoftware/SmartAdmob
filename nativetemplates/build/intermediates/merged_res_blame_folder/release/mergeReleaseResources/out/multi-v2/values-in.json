@@ -1,0 +1,150 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.google.android.ads.nativetemplates-mergeReleaseResources-11:/values-in/values-in.xml",
+            "map": [
+                {
+                    "source": "/home/atikul/.gradle/caches/transforms-3/8b7c4a94000aab99c997bce8d0ea54e3/transformed/play-services-basement-17.6.0/res/values-in/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "190",
+                        "endOffsets": "437"
+                    },
+                    "to": {
+                        "startLines": "29",
+                        "startColumns": "4",
+                        "startOffsets": "2809",
+                        "endColumns": "190",
+                        "endOffsets": "2995"
+                    }
+                },
+                {
+                    "source": "/home/atikul/.gradle/caches/transforms-3/12a8bfe518a9397d331b35f950d47f2b/transformed/play-services-ads-20.1.0/res/values-in/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "199,305,430,511,662,745,899,1013,1083,1187,1251,1314,1391,1486",
+                        "endColumns": "105,124,80,150,82,153,113,69,103,63,62,76,94,66",
+                        "endOffsets": "304,429,510,661,744,898,1012,1082,1186,1250,1313,1390,1485,1552"
+                    },
+                    "to": {
+                        "startLines": "30,31,32,33,34,35,36,37,38,39,40,41,42,43",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "3000,3110,3239,3324,3479,3566,3724,3842,3916,4024,4092,4159,4240,4339",
+                        "endColumns": "109,128,84,154,86,157,117,73,107,67,66,80,98,70",
+                        "endOffsets": "3105,3234,3319,3474,3561,3719,3837,3911,4019,4087,4154,4235,4334,4405"
+                    }
+                },
+                {
+                    "source": "/home/atikul/.gradle/caches/transforms-3/e50e401b584cc044e9910ddafd22c535/transformed/appcompat-1.2.0/res/values-in/values-in.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,220,324,429,516,620,736,819,897,988,1081,1176,1270,1370,1463,1558,1652,1743,1834,1920,2023,2128,2229,2333,2442,2550,2710,2809",
+                        "endColumns": "114,103,104,86,103,115,82,77,90,92,94,93,99,92,94,93,90,90,85,102,104,100,103,108,107,159,98,84",
+                        "endOffsets": "215,319,424,511,615,731,814,892,983,1076,1171,1265,1365,1458,1553,1647,1738,1829,1915,2018,2123,2224,2328,2437,2545,2705,2804,2889"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,44",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,220,324,429,516,620,736,819,897,988,1081,1176,1270,1370,1463,1558,1652,1743,1834,1920,2023,2128,2229,2333,2442,2550,2710,4410",
+                        "endColumns": "114,103,104,86,103,115,82,77,90,92,94,93,99,92,94,93,90,90,85,102,104,100,103,108,107,159,98,84",
+                        "endOffsets": "215,319,424,511,615,731,814,892,983,1076,1171,1265,1365,1458,1553,1647,1738,1829,1915,2018,2123,2224,2328,2437,2545,2705,2804,4490"
+                    }
+                },
+                {
+                    "source": "/home/atikul/.gradle/caches/transforms-3/486256cfea57dfe5c3c8a6541d5c9867/transformed/core-1.3.1/res/values-in/values-in.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "45",
+                        "startColumns": "4",
+                        "startOffsets": "4495",
+                        "endColumns": "100",
+                        "endOffsets": "4591"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "com.google.android.ads.nativetemplates-release-13:/values-in/values-in.xml",
+            "map": [
+                {
+                    "source": "/home/atikul/.gradle/caches/transforms-3/8b7c4a94000aab99c997bce8d0ea54e3/transformed/play-services-basement-17.6.0/res/values-in/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "190",
+                        "endOffsets": "437"
+                    },
+                    "to": {
+                        "startLines": "29",
+                        "startColumns": "4",
+                        "startOffsets": "2809",
+                        "endColumns": "190",
+                        "endOffsets": "2995"
+                    }
+                },
+                {
+                    "source": "/home/atikul/.gradle/caches/transforms-3/12a8bfe518a9397d331b35f950d47f2b/transformed/play-services-ads-20.1.0/res/values-in/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "199,305,430,511,662,745,899,1013,1083,1187,1251,1314,1391,1486",
+                        "endColumns": "105,124,80,150,82,153,113,69,103,63,62,76,94,66",
+                        "endOffsets": "304,429,510,661,744,898,1012,1082,1186,1250,1313,1390,1485,1552"
+                    },
+                    "to": {
+                        "startLines": "30,31,32,33,34,35,36,37,38,39,40,41,42,43",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "3000,3110,3239,3324,3479,3566,3724,3842,3916,4024,4092,4159,4240,4339",
+                        "endColumns": "109,128,84,154,86,157,117,73,107,67,66,80,98,70",
+                        "endOffsets": "3105,3234,3319,3474,3561,3719,3837,3911,4019,4087,4154,4235,4334,4405"
+                    }
+                },
+                {
+                    "source": "/home/atikul/.gradle/caches/transforms-3/e50e401b584cc044e9910ddafd22c535/transformed/appcompat-1.2.0/res/values-in/values-in.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,220,324,429,516,620,736,819,897,988,1081,1176,1270,1370,1463,1558,1652,1743,1834,1920,2023,2128,2229,2333,2442,2550,2710,2809",
+                        "endColumns": "114,103,104,86,103,115,82,77,90,92,94,93,99,92,94,93,90,90,85,102,104,100,103,108,107,159,98,84",
+                        "endOffsets": "215,319,424,511,615,731,814,892,983,1076,1171,1265,1365,1458,1553,1647,1738,1829,1915,2018,2123,2224,2328,2437,2545,2705,2804,2889"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,44",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,220,324,429,516,620,736,819,897,988,1081,1176,1270,1370,1463,1558,1652,1743,1834,1920,2023,2128,2229,2333,2442,2550,2710,4410",
+                        "endColumns": "114,103,104,86,103,115,82,77,90,92,94,93,99,92,94,93,90,90,85,102,104,100,103,108,107,159,98,84",
+                        "endOffsets": "215,319,424,511,615,731,814,892,983,1076,1171,1265,1365,1458,1553,1647,1738,1829,1915,2018,2123,2224,2328,2437,2545,2705,2804,4490"
+                    }
+                },
+                {
+                    "source": "/home/atikul/.gradle/caches/transforms-3/486256cfea57dfe5c3c8a6541d5c9867/transformed/core-1.3.1/res/values-in/values-in.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "45",
+                        "startColumns": "4",
+                        "startOffsets": "4495",
+                        "endColumns": "100",
+                        "endOffsets": "4591"
+                    }
+                }
+            ]
+        }
+    ]
+}

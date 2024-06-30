@@ -1,0 +1,72 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.google.android.ads.nativetemplates-mergeReleaseResources-11:/values-v16/values-v16.xml",
+            "map": [
+                {
+                    "source": "/home/atikul/.gradle/caches/transforms-3/e50e401b584cc044e9910ddafd22c535/transformed/appcompat-1.2.0/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "121",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "289"
+                    }
+                },
+                {
+                    "source": "/home/atikul/.gradle/caches/transforms-3/486256cfea57dfe5c3c8a6541d5c9867/transformed/core-1.3.1/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "com.google.android.ads.nativetemplates-release-13:/values-v16/values-v16.xml",
+            "map": [
+                {
+                    "source": "/home/atikul/.gradle/caches/transforms-3/e50e401b584cc044e9910ddafd22c535/transformed/appcompat-1.2.0/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "121",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "289"
+                    }
+                },
+                {
+                    "source": "/home/atikul/.gradle/caches/transforms-3/486256cfea57dfe5c3c8a6541d5c9867/transformed/core-1.3.1/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                }
+            ]
+        }
+    ]
+}

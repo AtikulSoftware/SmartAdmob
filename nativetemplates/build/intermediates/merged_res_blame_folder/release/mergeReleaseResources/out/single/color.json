@@ -1,0 +1,86 @@
+[
+    {
+        "merged": "com.google.android.ads.nativetemplates-release-13:/color/abc_primary_text_disable_only_material_light.xml",
+        "source": "com.google.android.ads.nativetemplates-appcompat-1.2.0-9:/color/abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "com.google.android.ads.nativetemplates-release-13:/color/abc_tint_edittext.xml",
+        "source": "com.google.android.ads.nativetemplates-appcompat-1.2.0-9:/color/abc_tint_edittext.xml"
+    },
+    {
+        "merged": "com.google.android.ads.nativetemplates-release-13:/color/switch_thumb_material_light.xml",
+        "source": "com.google.android.ads.nativetemplates-appcompat-1.2.0-9:/color/switch_thumb_material_light.xml"
+    },
+    {
+        "merged": "com.google.android.ads.nativetemplates-release-13:/color/abc_btn_colored_text_material.xml",
+        "source": "com.google.android.ads.nativetemplates-appcompat-1.2.0-9:/color/abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "com.google.android.ads.nativetemplates-release-13:/color/abc_primary_text_disable_only_material_dark.xml",
+        "source": "com.google.android.ads.nativetemplates-appcompat-1.2.0-9:/color/abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "com.google.android.ads.nativetemplates-release-13:/color/abc_hint_foreground_material_dark.xml",
+        "source": "com.google.android.ads.nativetemplates-appcompat-1.2.0-9:/color/abc_hint_foreground_material_dark.xml"
+    },
+    {
+        "merged": "com.google.android.ads.nativetemplates-release-13:/color/abc_tint_spinner.xml",
+        "source": "com.google.android.ads.nativetemplates-appcompat-1.2.0-9:/color/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "com.google.android.ads.nativetemplates-release-13:/color/abc_btn_colored_borderless_text_material.xml",
+        "source": "com.google.android.ads.nativetemplates-appcompat-1.2.0-9:/color/abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "com.google.android.ads.nativetemplates-release-13:/color/abc_primary_text_material_light.xml",
+        "source": "com.google.android.ads.nativetemplates-appcompat-1.2.0-9:/color/abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "com.google.android.ads.nativetemplates-release-13:/color/abc_background_cache_hint_selector_material_light.xml",
+        "source": "com.google.android.ads.nativetemplates-appcompat-1.2.0-9:/color/abc_background_cache_hint_selector_material_light.xml"
+    },
+    {
+        "merged": "com.google.android.ads.nativetemplates-release-13:/color/abc_hint_foreground_material_light.xml",
+        "source": "com.google.android.ads.nativetemplates-appcompat-1.2.0-9:/color/abc_hint_foreground_material_light.xml"
+    },
+    {
+        "merged": "com.google.android.ads.nativetemplates-release-13:/color/abc_tint_switch_track.xml",
+        "source": "com.google.android.ads.nativetemplates-appcompat-1.2.0-9:/color/abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "com.google.android.ads.nativetemplates-release-13:/color/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "com.google.android.ads.nativetemplates-appcompat-1.2.0-9:/color/abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
+        "merged": "com.google.android.ads.nativetemplates-release-13:/color/abc_tint_btn_checkable.xml",
+        "source": "com.google.android.ads.nativetemplates-appcompat-1.2.0-9:/color/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "com.google.android.ads.nativetemplates-release-13:/color/abc_tint_default.xml",
+        "source": "com.google.android.ads.nativetemplates-appcompat-1.2.0-9:/color/abc_tint_default.xml"
+    },
+    {
+        "merged": "com.google.android.ads.nativetemplates-release-13:/color/abc_primary_text_material_dark.xml",
+        "source": "com.google.android.ads.nativetemplates-appcompat-1.2.0-9:/color/abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "com.google.android.ads.nativetemplates-release-13:/color/abc_secondary_text_material_light.xml",
+        "source": "com.google.android.ads.nativetemplates-appcompat-1.2.0-9:/color/abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "com.google.android.ads.nativetemplates-release-13:/color/switch_thumb_material_dark.xml",
+        "source": "com.google.android.ads.nativetemplates-appcompat-1.2.0-9:/color/switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "com.google.android.ads.nativetemplates-release-13:/color/abc_secondary_text_material_dark.xml",
+        "source": "com.google.android.ads.nativetemplates-appcompat-1.2.0-9:/color/abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "com.google.android.ads.nativetemplates-release-13:/color/abc_search_url_text.xml",
+        "source": "com.google.android.ads.nativetemplates-appcompat-1.2.0-9:/color/abc_search_url_text.xml"
+    },
+    {
+        "merged": "com.google.android.ads.nativetemplates-release-13:/color/abc_tint_seek_thumb.xml",
+        "source": "com.google.android.ads.nativetemplates-appcompat-1.2.0-9:/color/abc_tint_seek_thumb.xml"
+    }
+]

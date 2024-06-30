@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.google.android.ads.nativetemplates-mergeReleaseResources-11:/values-land/values-land.xml",
+            "map": [
+                {
+                    "source": "/home/atikul/.gradle/caches/transforms-3/e50e401b584cc044e9910ddafd22c535/transformed/appcompat-1.2.0/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,125,196",
+                        "endColumns": "69,70,67",
+                        "endOffsets": "120,191,259"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "com.google.android.ads.nativetemplates-release-13:/values-land/values-land.xml",
+            "map": [
+                {
+                    "source": "/home/atikul/.gradle/caches/transforms-3/e50e401b584cc044e9910ddafd22c535/transformed/appcompat-1.2.0/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,125,196",
+                        "endColumns": "69,70,67",
+                        "endOffsets": "120,191,259"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,6 @@
+[
+    {
+        "merged": "com.google.android.ads.nativetemplates-release-13:/layout-v26/abc_screen_toolbar.xml",
+        "source": "com.google.android.ads.nativetemplates-appcompat-1.2.0-9:/layout-v26/abc_screen_toolbar.xml"
+    }
+]

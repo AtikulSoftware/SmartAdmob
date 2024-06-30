@@ -1,0 +1,20 @@
+<lint-module
+    format="1"
+    dir="/home/atikul/AndroidStudioProjects/SmartAdmob/nativetemplates"
+    name=":nativetemplates"
+    type="LIBRARY"
+    maven="SmartAdmob:nativetemplates:"
+    agpVersion="8.3.2"
+    buildFolder="build"
+    resourcePrefix="gnt_"
+    bootClassPath="/home/atikul/Android/Sdk/platforms/android-30/android.jar:/home/atikul/Android/Sdk/build-tools/34.0.0/core-lambda-stubs.jar"
+    javaSourceLevel="1.8"
+    compileTarget="android-30"
+    neverShrinking="true">
+  <lintOptions
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="release"/>
+</lint-module>

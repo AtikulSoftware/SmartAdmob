@@ -1,0 +1,6 @@
+[
+    {
+        "merged": "com.google.android.ads.nativetemplates-release-13:/layout-v16/notification_template_custom_big.xml",
+        "source": "com.google.android.ads.nativetemplates-core-1.3.1-2:/layout-v16/notification_template_custom_big.xml"
+    }
+]
