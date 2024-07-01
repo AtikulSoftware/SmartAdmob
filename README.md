@@ -299,6 +299,9 @@ public class SplashScreen extends AppCompatActivity {
         // set ad unit id
         AdmobAdUnit.ADMOB_OPEN_AD = "ca-app-pub-3940256099942544/9257395921";
 
+        //If you want you can set splash screen time (Default Time: 5 seconds)
+        AdmobConfig.COUNTER_TIME_MILLISECONDS = 5000;
+
         // for open ad
         splashManager = new SplashManager(this, new SplashOpenAdCallBack() {
             @Override
